@@ -22,6 +22,7 @@
 <link href="./main.a3f694c0.css" rel="stylesheet"></head>
 
 <body>
+    <div class="homebg"></div>
 
  <!-- Add your content of header -->
  <header>
@@ -44,14 +45,19 @@
                      <li><a href="./index.html" title="" class="active">Home</a></li>
                      <li><a href="./about.html" title=""> About</a></li>
                      <li><a href="./attendance.html" title=""> Attendance </a></li>
-                     <li><a href="./contact.html" title="">Contact</a></li>
-                     <li><a href="./components.html" title="">Components</a></li>
-                     <li>
-                         <p>
-                             <a href="./pay.html" class="btn btn-primary navbar-btn" title="">Pay</a>
-                         </p>
-                     </li>
-
+                     <li><a href="./supplies.html" title="">Supplies</a></li>
+<!--                     <li><a href="./components.html" title="">Components</a></li>-->
+                     <div class = "btn-group">
+                         <button type = "button" class = "btn btn-primary navbar-btn dropdown-toggle" data-toggle = "dropdown">
+                             Pay
+                             <span class = "caret"></span>
+                         </button>
+                         <ul class = "dropdown-menu" role = "menu">
+                             <li><a href="https://www.paypal.com/us/home"><img src="./assets/images/paypalbutton.png" class="payBtn" alt=""/></a></li>
+                             <li><a href="https://pay.google.com/"><img src="./assets/images/googlepaybutton.png" class="payBtn" alt=""/></a></li>
+                             <li><a href="https://www.chase.com/"><img src="./assets/images/chasebutton.png" class="payBtn" alt=""/></a></li>
+                         </ul>
+                     </div>
                  </ul>
              </div>
          </div>
@@ -59,13 +65,13 @@
  </header>
 
 
-<!-- added stock photo to get rid of the annoying hipster on the main page. -->
+<!-- added stock photo to get rid of the annoying hipster on the main page. -jj -->
 <div class="white-text-container background-image-container" style="background-image: url('./assets/images/alcoholic-beverages-beverages-blur-bottles-587738.jpg')">
     <div class="opacity"></div>
     <div class="container">
         <div class="row">
            
-            <div class="col-md-6">
+            <div class="col-md-6 ">
                 <h1>Brohouse 2020</h1>
                 <p>"Many of us agree that as the years pass, we are all going to move on, whether it be career, family, location, etc. I and some others agree that having something like this will always make sure we stay bros!"</p>
                 <p>-Joseph White</p>
@@ -80,55 +86,49 @@
     <div class="container">
         <!-- figured out how to fix the layout. gg bootstrap. -jj -->
             <div class="row"> 
-                <div class="col-md-6 section-container-spacer">
-                    <div class="text-center">
-                        <h2>The 2020 House</h2>
-                        <!-- <p></p> -->
-                            <!-- added Airbnb embed. Gotta figure out how to maybe not have it on its own -->
+                <div class="col-md-6">
+                        <!-- FUCK THIS TEXT CENTER BULLSHIT. NOT DOING WHAT I WANT -jj-->
+                        <div class=""><h3>The 2020 House</h3></div>
+                            <!-- added Airbnb embed. won't center in block... wtf -->
                         <div class="airbnb-embed-frame" data-id="37155446" data-view="home" data-hide-price="true" data-hide-reviews="true" style="width:auto;height:auto;margin:auto;">
                             <a href="https://www.airbnb.com/rooms/37155446?&amp;s=66&amp;unique_share_id=75c8f9ec-7795-42a0-b6e2-46a0683ce5ad&amp;source=embed_widget">View On Airbnb</a>
                             <a href="https://www.airbnb.com/rooms/37155446?&amp;s=66&amp;unique_share_id=75c8f9ec-7795-42a0-b6e2-46a0683ce5ad&amp;source=embed_widget" rel="nofollow">Safe private retreat on two acres with heated pool</a>
                             <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
                         </div>  
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="fa-container">
-                        <i class="fa fa-comment-o fa-3x" aria-hidden="true"></i>
-                    </div>
-                    <div class="text-center">
-                        <h3>House location</h3>
-                    </div>
-                    <div class="text-center">
-                        <p>This year's house is located in sunny Highland Park, Illinois. Just a short drive from Chicago, Naperville and Arlington Heights!</p>
-                        <p>Sorry Rockford bois, get reckt.</p>
-                    </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="fa-container">
-                        <i class="fa fa-heart-o fa-3x" aria-hidden="true"></i>
-                    </div>
+                    <img src="./assets/images/indexicons/unicorn.png" alt="" class="center-block">
                     <div class="text-center">
                         <h3>Address</h3>
                     </div>
                     <div  class = "text-center">
                         <p>2707 Mavor Lane, Highland Park, IL 60035</p>
                         <!-- Google maps embed, centered text -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.593181382146!2d-87.84262108420451!3d42.20176517919781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc0115261f1d3%3A0xf5f9e2f8fce422f0!2s2707%20Mavor%20Ln%2C%20Highland%20Park%2C%20IL%2060035!5e0!3m2!1sen!2sus!4v1591760715821!5m2!1sen!2sus" width="auto" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.593181382146!2d-87.84262108420451!3d42.20176517919781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc0115261f1d3%3A0xf5f9e2f8fce422f0!2s2707%20Mavor%20Ln%2C%20Highland%20Park%2C%20IL%2060035!5e0!3m2!1sen!2sus!4v1591760715821!5m2!1sen!2sus" width="auto" height="300em" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br><br>
+                    </div>
+                </div>
+                
+            </div>
+            <br>
+            <div class="row"> 
+                <div class="col-md-6">
+                    <img src="./assets/images/indexicons/birthday-and-party.png" alt="" class="center-block">
+                    <div class="text-center">
+                        <h3>About the house</h3>
+                    </div>
+                    <div class="text-center">
+                        <p>This year's house is located in sunny Highland Park, Illinois. Just a short drive from Chicago, Naperville and Arlington Heights!</p>
+                        <p>Sorry Rockford bois, get reckt.</p><br><br>
                     </div>
                 </div>
                 <!-- feel free to add. Thought adding something in would help with balance of the page -->
-                <div class="col-sm-12">
-                    <div class="fa-container">
-                        <i class="fa fa-bell-o fa-3x" aria-hidden="true"></i>
-                    </div>
+                <div class="col-md-6">
+                    <img src="./assets/images/indexicons/food-and-restaurant.png" alt="" class="center-block">
                     <div class="text-center">
                         <h3>Rules</h3>
                     </div>
                     <div>
-                        <p class="text-center">Always have a cooler nearby
-                        </p>
+                        <p class="text-center">Always have a cooler nearby</p>
                     </div>
                 </div>
 
@@ -136,7 +136,8 @@
     </div>
 </div>
 
-<div class="section-container">
+<!-- Don't see a need for this -->
+<!-- <div class="section-container">
     <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -166,7 +167,7 @@
                 </div>
             </div>
     </div>
-</div>
+</div> -->
 
 <!-- Don't see a need for this -->
 <!-- <div class="section-container background-color-container white-text-container">
@@ -185,7 +186,8 @@
      </div>
  </div> -->
 
- <div class="section-container">
+ <!-- Don't see a need for this -->
+ <!-- <div class="section-container">
     <div class="container">
         <div class="row">                   
             <div class="col-md-7">
@@ -229,7 +231,7 @@
             
         </div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -259,6 +261,9 @@
                          </a>
                      </p>
                  </div>
+                 <div class="col-md-4"></div>
+                    <h4>Attributions</h4>
+                    <p>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
              </div>
          </div>
      </div>
