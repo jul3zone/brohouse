@@ -24,45 +24,65 @@
 <body>
     <div class="homebg"></div>
 
- <!-- Add your content of header -->
- <header>
-     <nav class="navbar  navbar-fixed-top navbar-default">
-         <div class="container">
-             <div class="navbar-header">
-                 <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand" href="./index.html" title="">
-                     <img src="./assets/images/Cooler.png" class="navbar-logo-img" alt="">
-                 </a>
-             </div>
+    <!-- Add your content of header -->
+    <header>
+        <nav class="navbar  navbar-fixed-top navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="./index.html" title="">
+                        <img src="./assets/images/Cooler.png" class="navbar-logo-img" alt="">
+                    </a>
+                </div>
 
-             <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
-                 <ul class="nav navbar-nav navbar-right">
-                     <li><a href="./index.html" title="" class="active">Home</a></li>
-                     <li><a href="./about.html" title=""> About</a></li>
-                     <li><a href="./attendance.html" title=""> Attendance </a></li>
-                     <li><a href="./supplies.html" title="">Supplies</a></li>
-<!--                     <li><a href="./components.html" title="">Components</a></li>-->
-                     <div class = "btn-group">
-                         <button type = "button" class = "btn btn-primary navbar-btn dropdown-toggle" data-toggle = "dropdown">
-                             Pay
-                             <span class = "caret"></span>
-                         </button>
-                         <ul class = "dropdown-menu" role = "menu">
-                             <li><a href="https://www.paypal.com/us/home"><img src="./assets/images/paypalbutton.png" class="payBtn" alt=""/></a></li>
-                             <li><a href="https://pay.google.com/"><img src="./assets/images/googlepaybutton.png" class="payBtn" alt=""/></a></li>
-                             <li><a href="https://www.chase.com/"><img src="./assets/images/chasebutton.png" class="payBtn" alt=""/></a></li>
-                         </ul>
-                     </div>
-                 </ul>
-             </div>
-         </div>
-     </nav>
- </header>
+                <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./index.html" title="" class="active">Home</a></li>
+                        <li><a href="./about.html" title=""> About</a></li>
+                        <li><a href="./attendance.html" title=""> Attendance </a></li>
+                        <li><a href="./supplies.html" title="">Supplies</a></li>
+                        <!--                     <li><a href="./components.html" title="">Components</a></li>-->
+                        <li>
+                            <p>
+                                <a href="./pay.html" class="btn btn-primary navbar-btn" title="">Pay</a>
+                            </p>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                Launch demo modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
 
 <!-- added stock photo to get rid of the annoying hipster on the main page. -jj -->
